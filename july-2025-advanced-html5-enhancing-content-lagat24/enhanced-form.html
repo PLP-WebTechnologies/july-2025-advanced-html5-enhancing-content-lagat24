@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration</h1>
+        <p>Please fill out the form below. All fields marked * are required.</p>
+    </header>
+
+
+    <section>
+        <h2>Available Courses</h2>
+        <table border="1">
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>HTML Basics</td>
+                <td>2 weeks</td>
+            </tr>
+            <tr>
+                <td>CSS Styling</td>
+                <td>3 weeks</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Things You Will Learn</h2>
+        <ul>
+            <li>HTML5 Basics</li>
+            <li>Form Design</li>
+            <li>Basic Styling</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Welcome Video</h2>
+        <video controls autoplay loop muted width="300">">
+            <source src="283533_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name*:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name"><br><br>
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" autocomplete="bday"><br><br>
+
+                <label for="studentid">Student ID (Read-only):</label>
+                <input type="text" id="studentid" name="studentid" value="STU12345" readonly><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Selection</legend>
+
+                <label for="course">Select Course*:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Choose a course --</option>
+                    <option value="html">HTML Basics</option>
+                    <option value="css">CSS Styling</option>
+                </select><br><br>
+
+                <label>Preferred Learning Mode:</label><br>
+                <input type="radio" id="online" name="mode" value="online" required>
+                <label for="online">Online</label><br>
+                <input type="radio" id="offline" name="mode" value="offline" required>
+                <label for="offline">Offline</label><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</body>
+</html>
